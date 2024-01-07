@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alarm Webapp</title>
+    <link rel="stylesheet" href="Css.css" />
+  </head>
+  <body>
+    <div id="main-body">
+      <div id="currentTime"></div>
+      <div>
+        <label for="hourInput" style="color: brown; font-weight: 900;">HH</label>
+        <input
+          type="number"
+          id="hourInput"
+          name="hourInput"
+          min="0"
+          max="23"
+          step="1"
+          oninput="validateInput(this)"
+          required
+        />
+        <label for="minuteInput" style="color: brown; font-weight: 900;">MM</label>
+        <input
+          type="number"
+          id="minuteInput"
+          name="hourInput"
+          min="0"
+          max="59"
+          step="1"
+          oninput="validateInput(this)"
+          required
+        />
+        <button onclick="setAlarm()">Set Alarm</button>
+      </div>
+      <h1 style="color: brown; font-weight: 900;">Alarm Schedule</h1>
+      <div id="schedule"></div>
+    </div>
+    <script src="js.js"></script>
+  </body>
+</html>

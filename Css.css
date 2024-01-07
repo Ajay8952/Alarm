@@ -1,0 +1,97 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#main-body {
+  background-color:burlywood;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  height: 80%;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 10px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 60px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: brown;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: sandybrown;
+}
+
+#currentTime {
+  font-size: 28px;
+  margin-bottom: 30px;
+  height: 15%;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  font-weight: 900;
+  font-size: 4rem;
+  font-family:monospace;
+  font-style: italic;
+  color: brown;
+
+}
+
+#schedule {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f4f4f4;
+  overflow: auto;
+  height: 43%;
+}
+
+#schedule::-webkit-scrollbar {
+  width: 0; /* Set width to 0 to make it invisible */
+}
+
+/* Optional: Ensure compatibility with Firefox */
+#schedule {
+  scrollbar-width: none;
+}
+
+/* Optional: Style the range input */
+input[type="range"] {
+  width: 80%;
+  margin-top: 10px;
+}
+
+/* Optional: Media query for responsive design */
+@media (max-width: 600px) {
+  input,
+  select {
+    width: 100%;
+  }
+}
